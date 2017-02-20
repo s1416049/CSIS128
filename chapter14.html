@@ -1,0 +1,40 @@
+<html>
+<head>
+<script src="jquery-3.1.1.min.js" /></script>
+<script type="text/javascript">
+    <!--
+	function validateForm() {
+		formError = false;
+		var name = $("#myName").val();
+		var email = $("#myEmail").val();
+
+		regex = /[A-Za-z ]+/;
+		if(!regex.test(name)) {
+			alert("Your name must be filled out.");
+			formError = true;
+		}
+
+		regex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+		if(!regex.test(email)) {
+			alert("Your email must be filled out.");
+			formError = true;
+		}
+		
+		if(formError) {
+			return false;
+		}
+
+	}
+	// -->
+
+</script>
+</head>
+<body>
+<form action="http://www.markmurtha.com/csis128/readform.asp" method="get" id="myForm" onsubmit="return validateForm()">
+  Name: <input type="text" id="myName" name="myName">
+  <br>
+  E-Mail Address: <input type="text" id="myEmail" name="myEmail"> <br>
+  <input type="submit" id="submit" value="Sign Up Now">
+</form>
+</body>
+</html>
