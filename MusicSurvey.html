@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+.myLabel {
+	float:left;
+	display: block;
+	width: 8em;
+	padding-right: 1em;
+}
+
+.myLabel2 {
+	clear:both;
+	display: block;
+	width: 30em;
+	padding-right: 1em;
+}
+
+.myInput {
+	display: block;
+	margin-bottom: 1em;	
+}
+
+.myFieldset {
+	width: 30em;
+}
+</style>
+<title>Music Survey</title>
+</head>
+<body>
+<h1>Music Survey</h1>
+<form method="post" action="http://www.markmurtha.com/csis128/readform.asp">
+<p><label class="myLabel" for="myName">Name:</label><input type="text" id="myName" name="myName" class="myInput" />
+<label class="myLabel" for="myEmail">Email:</label><input type="email" id="myEmail" name="myEmail" placeholder="you@yourdomain.com" class="myInput" required="required"/>
+</p>
+
+<p><fieldset class="myFieldset">
+<legend>Select your favorite types of music.</legend>
+<label class="myLabel" for="myFavoriteGenre1"><input type="checkbox" id="myFavoriteGenre1" class="myFavoriteGenre" name="myFavoriteGenre" value="Soul" /> Soul</label>
+<label class="myLabel" for="myFavoriteGenre2"><input type="checkbox" id="myFavoriteGenre2" class="myFavoriteGenre" name="myFavoriteGenre" value="Rock" /> Rock</label>
+<label class="myLabel" for="myFavoriteGenre3"><input type="checkbox" id="myFavoriteGenre3" class="myFavoriteGenre" name="myFavoriteGenre" value="Jazz" /> Jazz</label>
+</fieldset><p>
+
+<p><fieldset class="myFieldset">
+<legend>Select how often you purchase music music.</legend>
+<label class="myLabel" for="myPurchaseHabits1"><input type="radio" id="myPurchaseHabits1" class="myPurchaseHabits" name="myPurchaseHabits" value="Weekly" /> Weekly</label>
+<label  class="myLabel"for="myPurchaseHabits2"><input type="radio" id="myPurchaseHabits2" class="myPurchaseHabits" name="myPurchaseHabits" value="Monthly" /> Monthly</label>
+<label  class="myLabel"for="myPurchaseHabits3"><input type="radio" id="myPurchaseHabits3" class="myPurchaseHabits" name="myPurchaseHabits" value="Rarely" /> Rarely</label>
+</fieldset><p>
+
+<p><label class="myLabel2" for="myListeningSpots">Where do you listen to music the most often?</label>
+<select id="myListeningSpots" name="myListeningSpots" size="3">
+<option value="Home">Home</option>
+<option value="Work">Work</option>
+<option value="Car">Car</option>
+<option value="Gym">Gym</option>
+</select><p>
+
+<p><label class="myLabel2" for="myMusicLife">What role does music play in your life?</label>
+<textarea name="myMusicLife" id="myMusicLife" col="60" rows="3" class="myInput"></textarea></p>
+
+<input type="submit" id="mySubmit" name="mySubmit" value="Submit" /> <input type="reset" name="reset" value="Reset" /><P>
+</form>
+
+<p>Ryan Zeller<br />
+<a href="mailto:s1416049@student.mcckc.edu">s1416049@student.mcckc.edu</a></p>
+
+</body>
+</html>
